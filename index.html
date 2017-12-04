@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+
+    <link rel='stylesheet' href='https://bootswatch.com/4/cyborg/bootstrap.css'>
+	<link href="https://fonts.googleapis.com/css?family=Economica|Orbitron" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<header class="card border-primary mb-3"><center>
+			<h1 class="text-primary">Chaos Emerald Collector!</h1><center><img src="assets/images/orbital.gif" alt="Sonic Emeralds" height="40%" width="20%">
+
+			<h5 class="text-primary">
+			<li>Click the various chaos emeralds below to reach the perfect chaos value.</li>
+			<br>
+			<li>Each chaos emerald equals a different tier of power. You have to figure this out by clicking.</li>
+			<br>
+			<li>You will achieve win the game once you reach the chaos value. If you exceed the value then you will experience a crash and lose the game.</li>
+			<br>
+			<li>Keep in mind that the chaos value and the gem power value resets after each win or loss. Good luck! May the choas be with you...</li></center><br><br>
+		</h5>
+		</center>
+
+		<div id="crystals">
+			<img class="card border-primary mb-3" id="gem1" src="assets/images/gem1.jpg" alt="gem">
+			<img class="card border-primary mb-3" id="gem2" src="assets/images/gem2.jpg" alt="gem">
+			<img class="card border-primary mb-3" id="gem3" src="assets/images/gem3.jpg" alt="gem">
+			<img class="card border-primary mb-3" id="gem4" src="assets/images/gem4.jpg" alt="gem">
+		</div>
+		
+		</header>
+
+		<div id="randomnumber-and-scoreboard">
+			<div class="card border-primary mb-3" id="random-number-generator">
+				<h4 class="text-primary">Chaos Value</h4><span class="card border-primary mb-3" id="random-number"></span>
+			</div>
+
+			<div class="card border-primary mb-3" id="score-board">
+				<h5 class="card border-primary mb-3" class="text-primary">Wins: <span id="win-counter">0</span></h4>
+				<h5 class="card border-primary mb-3" class="text-primary">Losses: <span id="loss-counter">0</span></h4><span id="win-or-lose"></span>
+			</div>
+		</div>
+
+		
+		<div class="card border-primary mb-3" id="current-score">
+			<h1 class="text-primary">Power Level:</h1>
+			<span id="current-score-counter"></span>
+		</div>
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
