@@ -1,6 +1,7 @@
 body {
 	background: url(../images/background.gif) no-repeat center center fixed;
 	background-size: cover;
+	border radius: 25%;
 }
 
 h1 {
